@@ -2,12 +2,11 @@ package com.demoIntelligence.ppmtool.model;
 
 import java.util.Date;
 
-import javax.persistence.GeneratedValue;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "Todos")
+@Entity
 public class Todo {
 
 	@Id

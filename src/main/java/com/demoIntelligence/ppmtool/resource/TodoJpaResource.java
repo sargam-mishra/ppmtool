@@ -25,7 +25,7 @@ public class TodoJpaResource {
 	private TodoHardcodedService todoService;
 
 	@PostMapping("/users/{username}/addTodo")
-	@CrossOrigin(origins = "http://localhost:3000")
+	@CrossOrigin(origins = "http://localhost:3000") 
 	public ResponseEntity<Void> addTodo(@PathVariable String username, @RequestBody Todo todo) {
 		todoService.addTodo(username, todo);
 
